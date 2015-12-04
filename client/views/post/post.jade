@@ -1,4 +1,12 @@
-template(name='post')
+template(name='posts')
+  | Post
+
+template(name='diviPosts')
   ul
-    each posts
+    each diviPosts
+      li !{title}
+
+template(name='extraPosts')
+  ul
+    each diviPosts
       li !{title}
