@@ -21,3 +21,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 fourseven:scss
 mquandalle:jade
 iron:router
+perak:markdown
+bruz:github-api

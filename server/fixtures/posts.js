@@ -1,16 +1,19 @@
 if (Posts.find().count() === 0) {
   Posts.insert({
-    title: 'Introducing Telescope',
-    url: 'http://sachagreif.com/introducing-telescope/'
+    theme: '',
+    title: 'An Overview of the Divi Builder',
+    category: 'The Divi Basics',
+    content: '...',
+    views: '0',
+    create_date: ''
   });
 
   Posts.insert({
-    title: 'Meteor',
-    url: 'http://meteor.com'
-  });
-
-  Posts.insert({
-    title: 'The Meteor Book',
-    url: 'http://themeteorbook.com'
+    theme: 'Divi',
+    title: '<b>An Overview of the Divi Builder</b>',
+    category: 'The Divi Basics',
+    content: '...',
+    views: '0',
+    create_date: ''
   });
 }
