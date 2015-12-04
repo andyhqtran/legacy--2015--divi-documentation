@@ -1,0 +1,64 @@
+// Colors
+@import "../base/colors";
+
+// Colors
+@import "../base/fonts";
+
+// Colors
+@import "../base/functions";
+
+.nav {
+  // Nav Panel
+  &-panel {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: -20%;
+    background: $white;
+    width: 300px;
+    height: 100%;
+    box-shadow: 0 0 10px rgba($black, 0.2);
+    transition: 0.3s ease;
+    opacity: 0;
+
+    &.visible {
+      left: 0%;
+      opacity: 1;
+    }
+  }
+
+  // Nav Header
+  &-header {
+    background: darken($white, 5%);
+    padding: 40px 20px;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      width: 40px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    border-bottom: 1px solid darken($white, 5%);
+    padding: 15px 20px;
+    color: $gray;
+    font-size: em(14);
+    font-weight: $semibold;
+
+    &.active {
+      background: $accent;
+      color: $white;
+    }
+  }
+}
