@@ -1,21 +1,26 @@
 template(name='home')
   div(class='container'): div(class='row'): div(class='col col-12')
-    div(class='module latest')
 
+    div(class='module popular')
       div(class='module-header') Most Popular
-
       div(class='module-content'
           flex=''
           flex-wrap='wrap')
-        article(class='post')
-          h2(class='title') Title Here
-          p(class='excerpt') Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-        article(class='post')
-          h2(class='title') Title Here
-          p(class='excerpt') Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-        article(class='post')
-          h2(class='title') Title Here
-          p(class='excerpt') Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-        article(class='post')
-          h2(class='title') Title Here
-          p(class='excerpt') Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+        each posts
+          article(class='post')
+            h2(class='title')!=title
+            p(class='excerpt')
+              +markdown
+                {{excerpt}}
+
+    div(class='module latest')
+      div(class='module-header') Latest Post
+      div(class='module-content'
+          flex=''
+          flex-wrap='wrap')
+        each posts
+          article(class='post')
+            h2(class='title')!=title
+            p(class='excerpt')
+              +markdown
+                {{excerpt}}

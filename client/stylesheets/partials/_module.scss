@@ -2,6 +2,7 @@
   background: $white;
   border-radius: 3px;
   box-shadow: 0 0 4px rgba($black, 0.2);
+  margin: 0 0 40px;
   overflow: hidden;
 
   &-header {
@@ -44,6 +45,11 @@
 
     .excerpt {
       font-size: em(14);
+
+      * {
+        font-size: inherit;
+        font-style: inherit;
+      }
     }
   }
 }
