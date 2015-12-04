@@ -1,2 +1,14 @@
 template(name='header')
-  | Header
+  header(class='header')
+    div(class='container'): div(class='row'): div(class='col col-12')
+      div(class='header-text')
+        h1(class='page-title') ElegantThemes Documentation
+        p(class='sub-title') Follow the instructions below to install and configure your new theme
+
+      div(class='header-search')
+        form(flex=''
+             flex-wrap='nowrap')
+          input(class='input'
+                type='text'
+                placeholder='Search...')
+          button(class='btn'): i(class='icon_search')

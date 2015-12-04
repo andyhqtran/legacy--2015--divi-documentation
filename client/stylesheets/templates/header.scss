@@ -1,0 +1,55 @@
+// Colors
+@import "../base/colors";
+
+// Fonts
+@import "../base/fonts";
+
+$search-position: 27px;
+
+.header {
+  position: relative;
+  background: $accent;
+  margin: 0 0 ($search-position + 40);
+  color: $white;
+
+  // Header Text
+  &-text {
+    padding: 100px 0;
+  }
+
+  .page-title {
+    color: inherit;
+  }
+
+  .sub-title {
+    margin: 0;
+  }
+
+  // Header Search
+  &-search {
+    position: absolute;
+    bottom: 0;
+    background: $white;
+    width: 100%;
+    margin: 0 0 (-$search-position);
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba($black, 0.2);
+    font-size: 18px;
+    overflow: hidden;
+
+    .input {
+      display: block;
+      width: 100%;
+    }
+
+    .btn {
+      background: $white;
+      border-radius: 0;
+      color: $accent;
+
+      &:hover {
+        background: darken($white, 5%);
+      }
+    }
+  }
+}
