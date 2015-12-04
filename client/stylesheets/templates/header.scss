@@ -25,13 +25,17 @@ $search-position: 27px;
     margin: 0;
   }
 
+  // Header Nav Toggle
+  &-nav-toggle {
+    color: $white;
+    font-size: 30px;
+  }
+
   // Header Search
   &-search {
-    position: absolute;
-    bottom: 0;
     background: $white;
     width: 100%;
-    margin: 0 0 (-$search-position);
+    margin: (-$search-position) 0;
     border-radius: 3px;
     box-shadow: 0 0 4px rgba($black, 0.2);
     font-size: 18px;
